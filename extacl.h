@@ -19,4 +19,7 @@ typedef struct extacl extacl_t;
 int extacl_set_file(const char *path, struct extacl *extacl, size_t extacl_len);
 int extacl_get_file(const char *path, struct extacl *extacl, size_t extacl_len);
 
+#define EXTACL_GET_SYSCALL 332
+#define EXTACL_SET_SYSCALL 333
+
 #endif /* _EXTACL_H */

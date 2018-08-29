@@ -11,3 +11,6 @@ $(LIB_NAME): $(OBJ)
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
+
+clean:
+	rm *.o *.a
